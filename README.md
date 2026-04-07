@@ -13,7 +13,11 @@
   ## How to Setup
 
   1. Open SQL Server Management Studio and run `database.sql` to create the database
-  2. Open `appsettings.json` and update the connection string with your server name
+  2. Open `appsettings.json` and update the connection string with your server name:
+     ```json
+     "DefaultConnection": "Server=YOUR_SERVER_NAME;Database=StudentManagementDB;Trusted_Connection=True;TrustServerCertificate=True;"
+     ```
+     Replace `YOUR_SERVER_NAME` with your SQL Server instance name (e.g. `localhost` or `DESKTOP-XYZ`)
   3. Open the solution in Visual Studio and press F5
 
   ## Login Details
